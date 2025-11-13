@@ -21,8 +21,10 @@ TODOs Checklist
 [x] - clone repo
 [x] - get app working
 [x] - change badges
+[x] - ignore obj and release stuff from cs files
 [] - use different image, lightweight
-[] - ignore obj and release stuff from cs files
+[] - add two branches
+[] - add agentless rum to index
 
 
 -->
