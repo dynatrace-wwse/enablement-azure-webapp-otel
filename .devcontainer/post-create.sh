@@ -14,7 +14,7 @@ setUpTerminal
 installDotNet
 
 
-
+runApp
 
 
 # If the Codespace was created via Workflow end2end test will be done, otherwise

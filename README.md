@@ -1,5 +1,5 @@
 <!-- markdownlint-disable-next-line -->
-# <img src="https://cdn.bfldr.com/B686QPH3/at/w5hnjzb32k5wcrcxnwcx4ckg/Dynatrace_signet_RGB_HTML.svg?auto=webp&format=pngg" alt="DT logo" width="30"> Enablement Codespaces Template 
+# <img src="https://cdn.bfldr.com/B686QPH3/at/w5hnjzb32k5wcrcxnwcx4ckg/Dynatrace_signet_RGB_HTML.svg?auto=webp&format=pngg" alt="DT logo" width="30"> Enablement Azure Web App Services with OneAgent and OpenTelemetry
 
 [![Davis CoPilot](https://img.shields.io/badge/Davis%20CoPilot-AI%20Powered-purple?logo=dynatrace&logoColor=white)](https://dynatrace-wwse.github.io/codespaces-framework/dynatrace-integration/#mcp-server-integration)
 [![dt-badge](https://img.shields.io/badge/Powered_by-DT_Enablement-8A2BE2?logo=dynatrace)](https://dynatrace-wwse.github.io/codespaces-framework/)
@@ -19,17 +19,15 @@ ___
 
 TODOs Checklist
 
-[] - clone repo
-[] - get app working
-[] - change badges
+[x] - clone repo
+[x] - get app working
+[x] - change badges
 [] - use different image, lightweight
 [] - ignore obj and release stuff from cs files
 
 
-
 -->
 
-# Exploring OneAgent and OpenTelemetry monitoring with Azure Web App Services
 In this tutorial, we will explore how Dynatrace can monitor and ingest traces from an Azure Web App Service through the three main deployment options.
 
 	• Native Dynatrace Azure Web App Service OneAgent Extension

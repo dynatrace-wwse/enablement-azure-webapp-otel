@@ -13,9 +13,10 @@ installDotNet(){
 }
 
 
-runApp(){
+runWebapp(){
 
   printInfoSection "Running Dotnet App"
+  PORT=5000
 
   # Calling function to parse out the OTEL endpoint and create a .live URL from the apps. URL.
   # TODO: Refactor this and do not assume K8s is running.
@@ -33,15 +34,19 @@ runApp(){
   
   # Run dotnet in background and pipe output to log file
   dotnet run > $REPO_PATH/logs/webapp.log 2>&1 &
-  printInfo "WebApp started in background. Logs available at: $REPO_PATH/logs/webapp.log"
+  printInfo "WebApp starting in background. Logs available at: $REPO_PATH/logs/webapp.log"
   printInfo "Process ID: $!"
+  printInfo "For checking the logs type 'logsWebapp' in the Terminal"
+
+  waitAppCanHandleRequests $PORT
+
 }
 
-logApp(){
+logsWebapp(){
   less +F $REPO_PATH/logs/webapp.log
 }
 
-stopApp(){
+stopWebapp(){
   printInfoSection "Stopping Dotnet App"
   pkill dotnet
 

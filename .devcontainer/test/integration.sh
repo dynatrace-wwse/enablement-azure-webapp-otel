@@ -13,4 +13,5 @@ printInfoSection "Running integration Tests for $RepositoryName"
 
 #assertRunningPod todoapp todoapp
 
-assertRunningApp 5000
+#TODO Assert Running App with only curl not from inside container.
+#assertRunningApp 5000
