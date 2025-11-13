@@ -16,7 +16,6 @@ ___
 
 <!--
 
-
 TODOs Checklist
 
 [x] - clone repo
@@ -36,5 +35,5 @@ In this tutorial, we will explore how Dynatrace can monitor and ingest traces fr
 
 
 Ready to learn how to create an enablement using codespaces? 
-## [👨‍🏫 Learn how to create enablements in Codespaces!](https://dynatrace-wwse.github.io/enablement-azure-webapp-otel)
+## [👨‍🏫 Learn how to monitor Azure Webapps with Dynatrace!](https://dynatrace-wwse.github.io/enablement-azure-webapp-otel)
 
