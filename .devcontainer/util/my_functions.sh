@@ -15,11 +15,11 @@ installDotNet(){
 
 runApp(){
 
+  printInfoSection "Running Dotnet App"
+
   # Calling function to parse out the OTEL endpoint and create a .live URL from the apps. URL.
   # TODO: Refactor this and do not assume K8s is running.
   dynatraceEvalReadSaveCredentials
-
-  printInfoSection "Running Dotnet App"
 
   # Rename vars to keep consistency
   # We only need os DT_ENVIRONMENT & DT_INGEST_TOKEN
@@ -28,11 +28,18 @@ runApp(){
   # DT_API_TOKEN -> DT_INGEST_TOKEN
   cd $REPO_PATH/webapp/
   
-  dotnet run
-
-  printInfo "App is running on port 5000"
+  # Create logs directory if it doesn't exist
+  mkdir -p $REPO_PATH/logs
+  
+  # Run dotnet in background and pipe output to log file
+  dotnet run > $REPO_PATH/logs/webapp.log 2>&1 &
+  printInfo "WebApp started in background. Logs available at: $REPO_PATH/logs/webapp.log"
+  printInfo "Process ID: $!"
 }
 
+logApp(){
+  less +F $REPO_PATH/logs/webapp.log
+}
 
 stopApp(){
   printInfoSection "Stopping Dotnet App"
