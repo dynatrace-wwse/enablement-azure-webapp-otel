@@ -85,16 +85,16 @@ For this you'll need write access to the repo where the enablement is being host
 When you call it it should look something like this:
 
 ```bash
-@sergiohinojosa ➜ /workspaces/enablement-codespaces-template (main) $ deployGhdocs 
+@sergiohinojosa ➜ /workspaces/enablement-azure-webapp-otel (main) $ deployGhdocs 
 INFO    -  Cleaning site directory
-INFO    -  Building documentation to directory: /workspaces/enablement-codespaces-template/site
+INFO    -  Building documentation to directory: /workspaces/enablement-azure-webapp-otel/site
 INFO    -  The following pages exist in the docs directory, but are not included in the "nav" configuration:
              - snippets/admonitions.md
              - snippets/disclaimer.md
              - snippets/grail-requirements.md
              - snippets/view-code.md
 INFO    -  Documentation built in 0.31 seconds
-INFO    -  Copying '/workspaces/enablement-codespaces-template/site' to 'gh-pages' branch and pushing to GitHub.
+INFO    -  Copying '/workspaces/enablement-azure-webapp-otel/site' to 'gh-pages' branch and pushing to GitHub.
 Enumerating objects: 61, done.
 Counting objects: 100% (61/61), done.
 Delta compression using up to 2 threads
@@ -102,9 +102,9 @@ Compressing objects: 100% (21/21), done.
 Writing objects: 100% (33/33), 1.31 MiB | 6.24 MiB/s, done.
 Total 33 (delta 15), reused 1 (delta 0), pack-reused 0 (from 0)
 remote: Resolving deltas: 100% (15/15), completed with 12 local objects.
-To https://github.com/dynatrace-wwse/enablement-codespaces-template
+To https://github.com/dynatrace-wwse/enablement-azure-webapp-otel
    bca482c..db42f7f  gh-pages -> gh-pages
-INFO    -  Your documentation should shortly be available at: https://dynatrace-wwse.github.io/enablement-codespaces-template/
+INFO    -  Your documentation should shortly be available at: https://dynatrace-wwse.github.io/enablement-azure-webapp-otel/
 
 ```
 

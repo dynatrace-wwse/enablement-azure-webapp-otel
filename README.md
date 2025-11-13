@@ -4,11 +4,11 @@
 [![Davis CoPilot](https://img.shields.io/badge/Davis%20CoPilot-AI%20Powered-purple?logo=dynatrace&logoColor=white)](https://dynatrace-wwse.github.io/codespaces-framework/dynatrace-integration/#mcp-server-integration)
 [![dt-badge](https://img.shields.io/badge/Powered_by-DT_Enablement-8A2BE2?logo=dynatrace)](https://dynatrace-wwse.github.io/codespaces-framework/)
 [![Downloads](https://img.shields.io/docker/pulls/shinojosa/dt-enablement?logo=docker)](https://hub.docker.com/r/shinojosa/dt-enablement)
-![Integration tests](https://github.com/dynatrace-wwse/enablement-codespaces-template/actions/workflows/integration-tests.yaml/badge.svg)
-[![Version](https://img.shields.io/github/v/release/dynatrace-wwse/enablement-codespaces-template?color=blueviolet)](https://github.com/dynatrace-wwse/enablement-codespaces-template/releases)
-[![Commits](https://img.shields.io/github/commits-since/dynatrace-wwse/enablement-codespaces-template/latest?color=ff69b4&include_prereleases)](https://github.com/dynatrace-wwse/enablement-codespaces-template/graphs/commit-activity)
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg?color=green)](https://github.com/dynatrace-wwse/enablement-codespaces-template/blob/main/LICENSE)
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-green)](https://dynatrace-wwse.github.io/enablement-codespaces-template/)
+![Integration tests](https://github.com/dynatrace-wwse/enablement-azure-webapp-otel/actions/workflows/integration-tests.yaml/badge.svg)
+[![Version](https://img.shields.io/github/v/release/dynatrace-wwse/enablement-azure-webapp-otel?color=blueviolet)](https://github.com/dynatrace-wwse/enablement-azure-webapp-otel/releases)
+[![Commits](https://img.shields.io/github/commits-since/dynatrace-wwse/enablement-azure-webapp-otel/latest?color=ff69b4&include_prereleases)](https://github.com/dynatrace-wwse/enablement-azure-webapp-otel/graphs/commit-activity)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg?color=green)](https://github.com/dynatrace-wwse/enablement-azure-webapp-otel/blob/main/LICENSE)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-green)](https://dynatrace-wwse.github.io/enablement-azure-webapp-otel/)
 
 ___
 
@@ -38,5 +38,5 @@ In this tutorial, we will explore how Dynatrace can monitor and ingest traces fr
 
 
 Ready to learn how to create an enablement using codespaces? 
-## [👨‍🏫 Learn how to create enablements in Codespaces!](https://dynatrace-wwse.github.io/enablement-codespaces-template)
+## [👨‍🏫 Learn how to create enablements in Codespaces!](https://dynatrace-wwse.github.io/enablement-azure-webapp-otel)
 
