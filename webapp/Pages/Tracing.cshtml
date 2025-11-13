@@ -1,0 +1,25 @@
+@page
+@model MyFirstAzureWebApp.Pages.TracingModel
+@{
+    ViewData["Title"] = "Tracing";
+}
+
+<h1>Tracing</h1>
+<p>This is the Tracing page.</p>
+
+<button id="startTraceBtn" class="btn btn-primary">Start Trace</button>
+<div id="traceStatus" style="margin-top:1em;"></div>
+
+<script>
+document.getElementById('startTraceBtn').addEventListener('click', async function() {
+    const statusDiv = document.getElementById('traceStatus');
+    statusDiv.innerText = 'Starting trace...';
+    try {
+        const response = await fetch('/TracingEndpoints?handler=RequestA', { method: 'POST' });
+        const result = await response.json();
+        statusDiv.innerText = 'Trace completed!\n' + result.status;
+    } catch (err) {
+        statusDiv.innerText = 'Error starting trace: ' + err;
+    }
+});
+</script>

@@ -1,0 +1,7 @@
+/Users/bobby.vogler/Library/CloudStorage/OneDrive-Dynatrace/Documents/SE/Code/Code/azureAppServiceExample/MyFirstAzureWebApp/bin/Release/net8.0/publish/MyFirstAzureWebApp
+/Users/bobby.vogler/Library/CloudStorage/OneDrive-Dynatrace/Documents/SE/Code/Code/azureAppServiceExample/MyFirstAzureWebApp/bin/Release/net8.0/publish/appsettings.Development.json
+/Users/bobby.vogler/Library/CloudStorage/OneDrive-Dynatrace/Documents/SE/Code/Code/azureAppServiceExample/MyFirstAzureWebApp/bin/Release/net8.0/publish/appsettings.json
+/Users/bobby.vogler/Library/CloudStorage/OneDrive-Dynatrace/Documents/SE/Code/Code/azureAppServiceExample/MyFirstAzureWebApp/bin/Release/net8.0/publish/MyFirstAzureWebApp.dll
+/Users/bobby.vogler/Library/CloudStorage/OneDrive-Dynatrace/Documents/SE/Code/Code/azureAppServiceExample/MyFirstAzureWebApp/bin/Release/net8.0/publish/MyFirstAzureWebApp.deps.json
+/Users/bobby.vogler/Library/CloudStorage/OneDrive-Dynatrace/Documents/SE/Code/Code/azureAppServiceExample/MyFirstAzureWebApp/bin/Release/net8.0/publish/MyFirstAzureWebApp.runtimeconfig.json
+/Users/bobby.vogler/Library/CloudStorage/OneDrive-Dynatrace/Documents/SE/Code/Code/azureAppServiceExample/MyFirstAzureWebApp/bin/Release/net8.0/publish/MyFirstAzureWebApp.pdb
