@@ -12,13 +12,30 @@
 
 ___
 
-This is a template so you as a professor can create fun and interesting enablements in no time.
 
-In this README you should add a brief description of the project. What will the student learn, which technologies and/or solutions. 
 
-<p align="center">
-<img src="docs/img/dt_professors.png" alt="Alt text" width="400"/>
-</p>
+<!--
+
+
+TODOs Checklist
+
+[] - clone repo
+[] - get app working
+[] - change badges
+[] - use different image, lightweight
+[] - ignore obj and release stuff from cs files
+
+
+
+-->
+
+# Exploring OneAgent and OpenTelemetry monitoring with Azure Web App Services
+In this tutorial, we will explore how Dynatrace can monitor and ingest traces from an Azure Web App Service through the three main deployment options.
+
+	• Native Dynatrace Azure Web App Service OneAgent Extension
+	• OpenTelemetry (Otel) via OTLP
+	• Native Dynatrace Azure Web App Service OneAgent Extension + OpenTelemetry 
+
 
 Ready to learn how to create an enablement using codespaces? 
 ## [👨‍🏫 Learn how to create enablements in Codespaces!](https://dynatrace-wwse.github.io/enablement-codespaces-template)

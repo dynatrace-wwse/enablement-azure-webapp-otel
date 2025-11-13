@@ -202,3 +202,24 @@ dist-ssr
 *.sw?
 .env
 .dt-app
+
+# .NET
+bin/
+obj/
+*.user
+*.userosscache
+*.suo
+*.cache
+*.dll
+*.pdb
+*.exe
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+.vs/
+*.dbmdl
+*.jfm
+project.lock.json
+project.fragment.lock.json
+artifacts/
