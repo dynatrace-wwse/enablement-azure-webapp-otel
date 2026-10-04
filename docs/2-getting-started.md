@@ -1,36 +1,41 @@
 --8<-- "snippets/grail-requirements.md"
 
-## 1. Prerequisites before launching the Codespace
+## 1. Launch the Codespace
 
-TODO: Place the prerequisites and everything that is needed before launching the codespace. 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/dynatrace-wwse/enablement-azure-webapp-otel){target="_blank"}
 
-As a Professor we highly recommend to install VSCode locally and always open the devcontainer from it, specially since we'll be using some plugins for enhancing the productivity and your experience while building trainings. 
+!!! tip "Secrets"
+    - `DT_ENVIRONMENT` — the URL of your Dynatrace environment, e.g. `https://abc123.apps.dynatrace.com`
+    - `DT_INGEST_TOKEN` — an API token with **Ingest OpenTelemetry traces**, **Ingest metrics** and **Ingest logs**
 
+While the Codespace is created, `.devcontainer/post-create.sh` installs the .NET 8 SDK, derives the
+OTLP endpoint (`DT_OTEL_ENDPOINT`) from `DT_ENVIRONMENT`, and starts the web app in the background
+on port **5000**.
 
-### 1.1 Download Visual Studio Code
+## 2. Generate traces
 
-- Go to  [https://code.visualstudio.com](https://code.visualstudio.com), download and install Visual Studio on your machine. 
+1. Open the app on port **5000** (VS Code **Ports** panel).
+2. Open the **Tracing** tab and click **Start Trace** a few times.
+3. In Dynatrace, open **Distributed Tracing** and look for the service `dotnet-quickstart`.
+   Its metrics and logs arrive over the same OTLP endpoint.
 
+The instrumentation lives in `webapp/Program.cs`: one `AddOtlpExporter` each for traces, metrics
+and logs.
 
-!!! tip "Tipp"
-    Working on a local Visual Studio Code, maximizes your productivity, you'll be able to connect to dev.containers remotely, locally, install plugins, and much more.
+## 3. Useful functions
 
+| Function | What it does |
+|---|---|
+| `runWebapp` | start the app again (port 5000) |
+| `logsWebapp` | follow the app log |
+| `stopWebapp` | stop the app |
 
-### 1.2 Install the TODO Tree VS Code extension. 
+## 4. Deploy to Azure App Service (optional)
 
-We'll be guiding you with TODOs to write your first hands-on trainig.
-- Click on the extensions tab
-- Search for "Todo tree"
-- Click on it and install it
-
-![todo](img/todo.png){: style="width: 400px;"}
-
-Once installed, you'll see on the left menu bar, the Tree icon. When you click on it, a pane with TODO task will open, this tasks will guide you to write your training, remove each of them and the code or text that needs to be replace once completed. Like this page 😉. 
-
-!!! tip "Let's launch the Codespace"
-    Now we are ready to launch the Codespace! 
-
+- [Deploy a .NET app to Azure App Service](https://learn.microsoft.com/en-us/azure/app-service/quickstart-dotnetcore?tabs=net80&pivots=development-environment-vscode){target="_blank"}
+- [Dynatrace OneAgent extension for Azure App Service](https://docs.dynatrace.com/docs/shortlink/azure-appservice-oneagent#portal){target="_blank"}
+- [Instrument .NET with OpenTelemetry](https://docs.dynatrace.com/docs/shortlink/otel-wt-dotnet#manually-instrument-your-application){target="_blank"}
 
 <div class="grid cards" markdown>
-- [Let's launch Codespaces:octicons-arrow-right-24:](3-codespaces.md)
+- [Cleanup :octicons-arrow-right-24:](cleanup.md)
 </div>
