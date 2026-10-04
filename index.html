@@ -6,6 +6,8 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Run a sample .NET web application that is instrumented with the OpenTelemetry SDK and sends its traces, metrics and logs to Dynatrace over OTLP. The same app can be deployed to Azure App Service, with or without the Dynatrace OneAgent extension.">
+      
       
       
       
@@ -79,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#how-to-to-use-this-template" class="md-skip">
+        <a href="#azure-web-app-opentelemetry" class="md-skip">
           Skip to content
         </a>
       
@@ -269,17 +271,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    1. About
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
       
       <a href="." class="md-nav__link md-nav__link--active">
         
@@ -290,32 +283,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-to-use-this-template" class="md-nav__link">
-    <span class="md-ellipsis">
-      How to to use this template?
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -348,51 +315,11 @@
   
   
     <li class="md-nav__item">
-      <a href="3-codespaces/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    3. Codespaces
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="4-content/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    4. Content
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="cleanup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    5. Cleanup
+    3. Cleanup
   </span>
   
 
@@ -412,7 +339,7 @@
         
   
   <span class="md-ellipsis">
-    6. Resources
+    4. Resources
   </span>
   
 
@@ -432,7 +359,7 @@
         
   
   <span class="md-ellipsis">
-    7. What's next?
+    5. What's next?
   </span>
   
 
@@ -458,23 +385,8 @@
   
   
   
+    
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-to-use-this-template" class="md-nav__link">
-    <span class="md-ellipsis">
-      How to to use this template?
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -491,8 +403,6 @@
   
   
 
-
-  <h1>1. About</h1>
 
 <div class="admonition warning">
 <p class="admonition-title">Not yet migrated to the Dynatrace Enablement App</p>
@@ -512,30 +422,22 @@ Support is community-driven and provided exclusively via <a href="https://github
 </ul>
 <p>We encourage you to experiment, <a href="https://forms.office.com/r/QaCx6VAJe8">share feedback</a>, and help shape the future. Start building today!</p>
 </div>
-<h2 id="how-to-to-use-this-template">How to to use this template?<a class="headerlink" href="#how-to-to-use-this-template" title="Permanent link">#</a></h2>
-<p>This is a template which will guide you on creating your own Hands-On training. 
-Within this tutorial you'll learn the basics how the codespaces work and how the documentation works, so you can build your own Hands-On training in no time.</p>
+<h1 id="azure-web-app-opentelemetry">Azure Web App &amp; OpenTelemetry<a class="headerlink" href="#azure-web-app-opentelemetry" title="Permanent link">#</a></h1>
+<p>This repository is a <strong>sample web application</strong> that shows how an app can be instrumented to
+send <strong>OpenTelemetry signals to Dynatrace</strong>.</p>
+<p>The app is a small ASP.NET Core (.NET 8) web application. It uses the OpenTelemetry .NET SDK and
+exports <strong>traces, metrics and logs</strong> over OTLP/HTTP straight to your Dynatrace environment
+(<code>&lt;your-environment&gt;/api/v2/otlp</code>), authenticated with an ingest token. No collector sits in
+between.</p>
+<p>The same application can also run on <strong>Azure App Service</strong>, in three flavours:</p>
 <ul>
-<li>Prerequisites </li>
-<li>Setting up the professors environment</li>
-<li>Writing the documentation</li>
-<li>How MkDocs work</li>
-<li>How to write your own functions</li>
-<li>Create Github documentation and publish it</li>
-<li>Tipp &amp; tricks</li>
-<li>Troubleshooting</li>
+<li>the Dynatrace <strong>OneAgent extension</strong> for Azure App Service,</li>
+<li><strong>OpenTelemetry</strong> via OTLP (what this Codespace runs),</li>
+<li>OneAgent extension <strong>plus</strong> OpenTelemetry.</li>
 </ul>
-<p align="center">
-  <img src="img/dt_professors.png" alt="Professors" width="200">
-</p>
-
-<div class="admonition tip">
-<p class="admonition-title">What will we do</p>
-<p>In this tutorial we will learn how easy it is to create an enablement using codespaces and a Kubernetes cluster!</p>
-</div>
 <div class="grid cards">
 <ul>
-<li><a href="2-getting-started/">Yes! let's begin <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span></a></li>
+<li><a href="2-getting-started/">Let's begin <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span></a></li>
 </ul>
 </div>
 
@@ -544,6 +446,9 @@ Within this tutorial you'll learn the basics how the codespaces work and how the
 
 
 
+
+  
+  
 
 
 
