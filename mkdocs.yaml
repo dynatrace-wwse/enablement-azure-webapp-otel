@@ -10,11 +10,9 @@ repo_url: "https://github.com/dynatrace-wwse/enablement-azure-webapp-otel"
 nav:
   - "1. About": index.md
   - "2. Getting started": 2-getting-started.md
-  - "3. Codespaces": 3-codespaces.md
-  - "4. Content": 4-content.md
-  - "5. Cleanup": cleanup.md
-  - "6. Resources": resources.md
-  - "7. What's next?": whats-next.md
+  - "3. Cleanup": cleanup.md
+  - "4. Resources": resources.md
+  - "5. What's next?": whats-next.md
 
 extra:
   rum_snippet: "https://js-cdn.dynatrace.com/jstag/1612cf70810/bf81393wlb/35e3adf9b2105f6e_complete.js"
